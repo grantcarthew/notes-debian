@@ -18,3 +18,8 @@ Here's what I did and would therefore suggest:
 1. Select LCD Filter to Default
 1. Select Subpixel Geometry to RGB
 1. Now Save and close it. This did the trick for me.
+
+### Packages
+
+* [ttf-mscorefonts-installer](https://packages.debian.org/search?keywords=ttf-mscorefonts-installer) - Installer for Microsoft TrueType core fonts.
+* [Cascadia Code](https://github.com/microsoft/cascadia-code) - Monospaced font that includes programming ligatures.
