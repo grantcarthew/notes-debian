@@ -1,82 +1,97 @@
 # Debian GNU/Linux Notes and Resources
 
+This document lists common tasks after installing Debian GNU/Linux either with
+or without a desktop environment.
+
 ## Basic Setup
 
-This document lists common tasks after installing Linux and other resources.
+Run the following commands to install and configure the basics:
 
-commands:
-
+```bash
+su root
+sed -i 's/main/main contrib non-free/' /etc/apt/sources.list
 apt-get update; apt-get -y full-upgrade
 apt-get install sudo vim ntp git tmux curl htop bmon build-essential apt-listbugs apt-listchanges netselect-apt
-vim /etc/apt/source.list
+vim /etc/sudoers # Add your account with desired permissions
+exit
+```
 
-Tools:
+Change the terminal edit mode:
 
-    htop - command line task manager
-    bmon (run bmon -b for bps)
-    iostat
-    tcpdump
-    vim
-    ntp
-    build-essentals
-    git
-    apt-listbugs
-    apt-listchanges
-    guake
-    tmux
-    zsh
-    mtr
-    progress
+```bash
+cd ~
+echo set editor-mode vi > .inputrc
+```
 
+## Packages
 
-Internet:
+### Tools
 
-    Chrome
-    Vivaldi
-    youtube-dl
-
-
-Audio:
-
-    pithos
-    musescore
-    handbrake
-    vlc
+* htop - Command line mornitor and task manager
+* bmon (run bmon -b for bps)
+* iostat
+* tcpdump
+* vim
+* ntp
+* build-essentals
+* git
+* apt-listbugs
+* apt-listchanges
+* guake
+* tmux
+* zsh
+* mtr
+* progress
 
 
-Video:
+### Internet
 
-    flowblade
-    openshot
-    vlc
-
-
-Images:
-
-    inkscape
-    gimp
+* Chrome
+* Vivaldi
+* youtube-dl
 
 
-Productivity:
+### Audio
 
-    liferea
-    bibletime
-    virtualbox
-    zim
-    jitsi
-
-
-Programming:
-
-    Python3
-    spyder (inc: matplotlib, pandas, numpy, sympy, scipy, scikit-learn)
+* pithos
+* musescore
+* handbrake
+* vlc
 
 
-Games:
+### Video
 
-    steam
-    http://www.penguspy.com/
-    freeciv
+* flowblade
+* openshot
+* vlc
+
+
+### Images
+
+* inkscape
+* gimp
+
+
+### Productivity
+
+* liferea
+* bibletime
+* virtualbox
+* zim
+* jitsi
+
+
+### Programming
+
+* Python3
+* spyder (inc: matplotlib, pandas, numpy, sympy, scipy, scikit-learn)
+
+
+### Games
+
+* steam
+* http://www.penguspy.com/
+* freeciv
 
 
 
