@@ -1,7 +1,29 @@
 # Debian GNU/Linux Notes and Resources
 
-This document lists common tasks after installing Debian GNU/Linux either with
-or without a desktop environment.
+This document lists common resources, software, and helpful resources for the Debian GNU/Linux operating system.
+
+Table of Contents:
+
+* References
+* Basic Setup
+* Packages
+
+## References
+
+Debian GNU/Linux:
+
+* [Debian Homepage](https://www.debian.org/)
+* [Debian Wiki](https://wiki.debian.org/)
+* [deb-multimedia](http://www.deb-multimedia.org/)
+
+Desktop:
+
+* [Gnome](https://www.gnome.org/)
+* [XFCE](https://www.xfce.org/)
+
+Learning:
+
+* [Shell productivity tips and tricks](https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html)
 
 ## Basic Setup
 
@@ -23,6 +45,20 @@ cd ~
 echo set editor-mode vi > .inputrc
 ```
 
+Install extra tools:
+
+```bash
+# Node.js version manager 'n'.
+curl -L https://git.io/n-install | bash
+
+# tldr documentation tool batch install
+# https://github.com/raylee/tldr
+mkdir -p ~/bin
+curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
+chmod +x ~/bin/tldr
+echo export PATH=$PATH:~/bin >> ~/.bashrc
+```
+
 ## Packages
 
 ### Tools
@@ -39,6 +75,7 @@ echo set editor-mode vi > .inputrc
 * apt-listchanges
 * guake
 * tmux
+* [tldr](https://github.com/tldr-pages/tldr) - A collection of simplified and community-driven man pages.
 * zsh
 * mtr
 * progress
@@ -83,8 +120,11 @@ echo set editor-mode vi > .inputrc
 
 ### Programming
 
-* Python3
-* spyder (inc: matplotlib, pandas, numpy, sympy, scipy, scikit-learn)
+* [Python3](https://wiki.debian.org/Python)
+* [Spyder IDE](https://www.spyder-ide.org/) (inc: matplotlib, pandas, numpy, sympy, scipy, scikit-learn)
+* [Node.js](https://nodejs.org/en/)
+  * [n](https://github.com/tj/n) Node.js version manager ([n-install script](https://github.com/mklement0/n-install))
+* [VSCode](https://code.visualstudio.com/)
 
 
 ### Games
