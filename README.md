@@ -80,13 +80,11 @@ echo export PATH=$PATH:~/bin >> ~/.bashrc
 * mtr
 * progress
 
-
 ### Internet
 
 * Chrome
 * Vivaldi
 * youtube-dl
-
 
 ### Audio
 
@@ -95,19 +93,16 @@ echo export PATH=$PATH:~/bin >> ~/.bashrc
 * handbrake
 * vlc
 
-
 ### Video
 
 * flowblade
 * openshot
 * vlc
 
-
 ### Images
 
 * inkscape
 * gimp
-
 
 ### Productivity
 
@@ -117,7 +112,6 @@ echo export PATH=$PATH:~/bin >> ~/.bashrc
 * zim
 * jitsi
 
-
 ### Programming
 
 * [Python3](https://wiki.debian.org/Python)
@@ -126,17 +120,8 @@ echo export PATH=$PATH:~/bin >> ~/.bashrc
   * [n](https://github.com/tj/n) Node.js version manager ([n-install script](https://github.com/mklement0/n-install))
 * [VSCode](https://code.visualstudio.com/)
 
-
 ### Games
 
 * steam
 * http://www.penguspy.com/
 * freeciv
-
-
-
-
-
-
-
-
