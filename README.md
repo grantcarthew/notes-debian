@@ -33,7 +33,7 @@ Run the following commands to install and configure the basics:
 su root
 sed -i 's/main/main contrib non-free/' /etc/apt/sources.list
 apt-get update; apt-get -y full-upgrade
-apt-get install sudo vim ntp git tmux curl htop bmon build-essential apt-listbugs apt-listchanges netselect-apt
+apt-get install sudo vim ntp git tmux curl htop atop bmon build-essential apt-listbugs apt-listchanges netselect-apt
 vim /etc/sudoers # Add your account with desired permissions
 exit
 ```
