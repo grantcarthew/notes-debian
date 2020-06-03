@@ -57,6 +57,8 @@ mkdir -p ~/bin
 curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
 chmod +x ~/bin/tldr
 echo export PATH=$PATH:~/bin >> ~/.bashrc
+
+pip3 install pinggraph # Installs gping
 ```
 
 ## Packages
